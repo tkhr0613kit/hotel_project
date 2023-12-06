@@ -17,5 +17,7 @@ use App\Http\Controllers\Room_typeController;
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/room_type',[Room_typeController::class, 'index']);
+
+Route::get('guest/index','GuestController@index');
+
