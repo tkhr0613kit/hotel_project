@@ -18,7 +18,7 @@
             justify-content: space-between;
         }
         .guest_name,.guest_tel,.guest_address {
-            width: 50em;
+            width: 51em;
 
         }
     </style>
