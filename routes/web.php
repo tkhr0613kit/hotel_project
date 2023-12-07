@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\GuestController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\Room_typeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/room_type',[Room_typeController::class, 'index']);
 
-// Route::get('', [GuestController::class, ''])->name('');
 
 Route::get('guest',[GuestController::class, 'index'])->name('guest');
 

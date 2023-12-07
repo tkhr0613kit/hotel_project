@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-
+        $this->call(RoomtypesTableSeeder::class);
+      
         \App\Models\Guest::factory(10)->create();
+
     }
 }
