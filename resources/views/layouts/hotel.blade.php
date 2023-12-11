@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>New Hotel Group</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,7 +14,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
     <style>
+        body {
+            color: #333333;
+            background-color: #FFFFFF;
+            font-size: 100%;
+            line-height: 1.7;
+            margin: 10px auto;
+            width: 90%;
+            -webkit-text-size-adjust: 100%;
+        }
+        a {
+            text-decoration: none;
+        }
+        .main-nav {
+            display: flex;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            list-style: none;
+        }
+        .main-nav li {
+            margin-left: 36px;
+
+
         li {
             list-style: none;
         }
@@ -26,9 +50,10 @@
             justify-content: space-between;
         }
         .guest_name,.guest_tel,.guest_address {
+
             width: 45em;
 
-        }
+       }
     </style>
 </head>
 <body>
