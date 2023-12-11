@@ -9,7 +9,9 @@ class Reservation extends Model
 {
     use HasFactory;
 
+
     public function reserve_lists(){
        return $this->belongsToMany('Room::class','reserve_lists','reservation_id','room_id');
     }
+
 }
