@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
     <title>APホテル</title>
     <style>
         body {
@@ -28,40 +27,23 @@
         }
         .main-nav li {
             margin-left: 36px;
-
-
-        li {
-            list-style: none;
-        }
-        tr {
-            font-size: large;
-        }
-        .main_nav {
-            width: 50%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .guest_name,.guest_tel,.guest_address {
-            width: 51em;
         }
     </style>
 </head>
 <body>
     <header>
-
         <h1>APホテル</h1>
         <nav>
             <ul class="main-nav">
-                <li><a href="/guest">利用者一覧</a></li>
-                <li><a href="/reserve">予約一覧</a></li>
+                <li><a href="/room_name">部屋名称</a></li>
+                <li><a href="/room_capacity">宿泊可能人数</a></li>
             </ul>
             <ul class="main-nav">
-                <li><a href="/guest/add">利用者一覧</a></li>
-                <li><a href="/reserve/add">予約一覧</a></li>
+                <li><a href="/room_name/add">部屋名称</a></li>
+                <li><a href="/room_capacity/add">宿泊可能人数</a></li>
             </ul>
         </nav>
     </header>
-
     <body>
         @yield('body')
     </body>
