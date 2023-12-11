@@ -1,3 +1,7 @@
+@extends('layouts.hotel')
+
+部屋予約追加
+
 @section('content')
 <form action="/room/add" method="post">
     <table>
@@ -6,4 +10,4 @@
         <tr><th></th><td><input type="submit" value="send"></td></tr>
     </table>
 </form>
-@endsection
+@endsection 

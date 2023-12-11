@@ -22,6 +22,9 @@ class RoomController extends Controller
 
     public function create(Request $request)
     {
+        $room = new Room;
+
+        $room->fill($request->all())->save();
         return redirect('/room');
     }
 }

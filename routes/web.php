@@ -19,5 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/room','[RoomController::class,index]');
-Route::post('/room','[RoomController::class,index]');
+Route::get('/room',[RoomController::class,'index']);
+
+Route::get('/room/add',[RoomController::class,'add']);
+Route::get('/room/create',[RoomController::class,'create']);
