@@ -48,16 +48,6 @@
         <h1>お部屋のご案内</h1>       
     </header>
     <body>
-        {{-- <nav>  
-            <ul class="main-nav">
-                <li><a href="/room_name">部屋名称</a></li>
-                <li><a href="/room_capacity">宿泊可能人数</a></li>
-            </ul>
-            <ul class="main-nav">
-                <li><a href="/room_name/add">部屋名称</a></li>
-                <li><a href="/room_capacity/add">宿泊可能人数</a></li>
-            </ul>
-        </nav> --}}
         <br>
         <h2>シングル</h2>
         <img src = "{{ asset('img/single.jpeg')}}" alt="single">
