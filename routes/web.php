@@ -47,3 +47,5 @@ Route::get('guest/add', [GuestController::class, 'add'])->name('guest/add');
 Route::post('guest/add', [GuestController::class, 'create'])->name('guest/create');
 
 
+Route::get('/room_type',[Room_typeController::class, 'index']);
+Route::get('/room_type',[Room_typeController::class, 'index']);
