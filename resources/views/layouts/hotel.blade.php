@@ -65,8 +65,8 @@
                 <li><a href="#">ホーム</a></li>
                 <li><a href="#">管理者ログイン</a></li>
                 <li><a href="guest/add">利用者管理</a></li>
-                <li><a href="#">予約管理</a></li>
-                <li><a href="#">部屋管理</a></li>
+                <li><a href="reservation">予約管理</a></li>
+                <li><a href="room">部屋管理</a></li>
             </ul>
         </nav>
     </header>

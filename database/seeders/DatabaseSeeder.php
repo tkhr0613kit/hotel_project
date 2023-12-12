@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RoomsTableSeeder::class);
 
         $this->call(RoomtypesTableSeeder::class);
+        $this->call(Reserve_listsSeeder::class);
       
         \App\Models\Guest::factory(10)->create();
 
