@@ -49,11 +49,17 @@
             display: flex;
             justify-content: space-between;
         }
+<<<<<<< HEAD
         .guest_name,.guest_tel,.guest_address {
 
             width: 45em;
 
        }
+=======
+        /* .guest_name,.guest_tel,.guest_address {
+            width: 45em;
+        } */
+>>>>>>> 535be51 (guestsテーブルid名修正、bootstrap追加)
     </style>
 </head>
 <body>
