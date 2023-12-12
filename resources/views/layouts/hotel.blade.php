@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
     <title>New Hotel Group</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,7 +15,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+room_types_tkhr
     <style>
+
+
+    <style>
+        body {
+            color: #333333;
+            background-color: #FFFFFF;
+            font-size: 100%;
+            line-height: 1.7;
+            margin: 10px auto;
+            width: 90%;
+            -webkit-text-size-adjust: 100%;
+        }
+        a {
+            text-decoration: none;
+        }
+        .main-nav {
+            display: flex;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            list-style: none;
+        }
+        .main-nav li {
+            margin-left: 36px;
+        }
+
+
+main
         li {
             list-style: none;
         }
@@ -27,16 +57,23 @@
         }
         .guest_name,.guest_tel,.guest_address {
             width: 45em;
+room_types_tkhr
 
         }
+
+       }
+
+main
     </style>
 </head>
 <body>
     <header>
+room_types_tkhr
         <div class="header_title">
             <h1>New Hotel Group</h1>
         </div>
         <h2>※管理者画面</h2>
+main
         <nav>
             <ul class="main_nav">
                 <li><a href="#">ホーム</a></li>
@@ -47,7 +84,11 @@
             </ul>
         </nav>
     </header>
+room_types_tkhr
     <hr>
+
+
+main
     <body>
         @yield('body')
     </body>
