@@ -51,7 +51,10 @@
             display: flex;
             justify-content: space-between;
         }
-        
+        .guest_name,.guest_tel,.guest_address {
+            width: 45em;
+       }
+
     </style>
 </head>
 <body>

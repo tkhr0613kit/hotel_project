@@ -2,7 +2,7 @@
 
 @section('body')
 <h2>※入力内容確認</h2>
-<table class="teble-bordered">
+<table class="table teble-bordered">
     <tr>
         <th>お名前</th><th>電話番号</th><th>ご住所</th>
     </tr>

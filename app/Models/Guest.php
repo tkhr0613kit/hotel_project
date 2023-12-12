@@ -9,6 +9,8 @@ class Guest extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'guest_id';
+
     protected $fillable = [
         'name','tel','address'
     ];

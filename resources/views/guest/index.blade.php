@@ -2,7 +2,7 @@
 
 @section('body')
     <h2>※利用者一覧</h2>
-    <table>
+    <table class="table table-striped">
         <th>お名前</th><th>電話番号</th><th>ご住所</th>
         @foreach ($guests as $guest)
             <tr>
