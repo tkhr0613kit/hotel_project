@@ -2,7 +2,6 @@
 
 @section('body')
     
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
