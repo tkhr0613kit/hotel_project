@@ -2,7 +2,7 @@
 
 部屋予約追加
 
-@section('content')
+@section('body')
 <form action="/room/add" method="post">
     <table>
         @csrf
