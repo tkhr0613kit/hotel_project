@@ -16,4 +16,9 @@ class Reservation extends Model
         //belongsTo(主テーブルの指定、従テーブルの外部キー、対応する主テーブルの主キー)
         return $this->belongsTo('App\Guest', 'guest_id','guest_id');
     }
+
+    public function reserve_lists(){
+       return $this->belongsToMany('Room::class','reserve_lists','reservation_id','room_id');
+    }
+
 }
