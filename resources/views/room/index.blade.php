@@ -14,7 +14,8 @@
     @foreach ($rooms as $room)
     <tr>
         <td>{{$room->room_id}}</td>
-        <td></td>
+        {{-- ルームネームを取り出したい場合 --}}
+        <td>{{$room->room_type->room_name}}</td>
         <td>{{$room->room_number}}</td>
     </tr>
         
