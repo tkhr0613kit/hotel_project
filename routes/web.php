@@ -21,3 +21,5 @@ Route::get('/room_type',[Room_typeController::class, 'index']);
 
 Route::get('guest/index','GuestController@index');
 
+Route::get('/room_type',[Room_typeController::class, 'index']);
+Route::get('/room_type',[Room_typeController::class, 'index']);

@@ -5,25 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New Hotel Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <style>
+        li {
+            list-style: none;
+        }
+        tr {
+            font-size: large;
+        }
+        .main_nav {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .guest_name,.guest_tel,.guest_address {
+            width: 45em;
+
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="hotel_name">
+        <div class="header_title">
             <h1>New Hotel Group</h1>
         </div>
+        <h2>※管理者画面</h2>
         <nav>
-            <ul class="select_menu">
-                <li><a href="guest/index">利用者一覧</a></li>
-                <li><a href="guest/add">利用者登録</a></li>
-                <li><a href="">管理画面</a></li>
+            <ul class="main_nav">
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">管理者ログイン</a></li>
+                <li><a href="guest/add">利用者管理</a></li>
+                <li><a href="#">予約管理</a></li>
+                <li><a href="#">部屋管理</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
+    <hr>
+    <body>
+        @yield('body')
+    </body>
 </body>
 </html>
