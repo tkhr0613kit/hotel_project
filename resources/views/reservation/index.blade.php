@@ -10,6 +10,7 @@
         <th>人数</th>
         <th>チェックイン日</th>
         <th>チェックアウト日</th>
+        <th>部屋番号</th>
     @foreach($reservations as $reservation)
     <tr>
         <th>{{$reservation->reservation_id}}</th>
@@ -20,6 +21,8 @@
         <td>{{$reservation->number_of_guests}}名</td>
         <td>{{$reservation->check_in_date}}</td>
         <td>{{$reservation->check_out_date}}</td>
+
+        <td>{{$reservation->reserve_lists}}</td>
     </tr>
     @endforeach
     </table>

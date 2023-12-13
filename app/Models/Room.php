@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Room extends Model
 {
-    
+    protected $primaryKey = 'room_id';
 
     public static $rules = array(
         'room_type_id' => 'required',

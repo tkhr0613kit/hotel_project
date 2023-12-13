@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Reserve_list extends Model
 {
     use HasFactory;
+
+    protected $primaryKey = 'reserve_lists_id';
 }

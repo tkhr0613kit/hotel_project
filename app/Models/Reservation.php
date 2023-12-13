@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Room;
 
 class Reservation extends Model
 {
@@ -14,11 +15,11 @@ class Reservation extends Model
 
     public function guest() {
         //belongsTo(主テーブルの指定、従テーブルの外部キー、対応する主テーブルの主キー)
-        return $this->belongsTo('App\Guest', 'guest_id','guest_id');
+        return $this->belongsTo('App\Models\Guest', 'guest_id','guest_id');
     }
 
     public function reserve_lists(){
-       return $this->belongsToMany('Room::class','reserve_lists','reservation_id','room_id');
+       return $this->belongsToMany(Room::class,'reserve_lists','room_id','reservation_id');
     }
 
 }

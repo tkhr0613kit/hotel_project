@@ -12,8 +12,10 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
+
     public function run(): void
     {   
+
         $this->call(ReservationsTableSeeder::class);
 
         // \App\Models\User::factory(10)->create();
@@ -26,6 +28,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RoomsTableSeeder::class);
 
         $this->call(RoomtypesTableSeeder::class);
+        $this->call(Reserve_listsSeeder::class);
       
         \App\Models\Guest::factory(10)->create();
 
