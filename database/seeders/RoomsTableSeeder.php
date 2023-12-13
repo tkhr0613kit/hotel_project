@@ -14,7 +14,6 @@ class RoomsTableSeeder extends Seeder
     {
         for($i=0;$i<10;$i++){
       $param = [
-        'room_type_id' =>fake()->numberBetween(1,1),
         'room_number' =>fake()->numberBetween(1, 30),
         'created_at' => now(),
             'updated_at' => now(),
