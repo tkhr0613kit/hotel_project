@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Room_type;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Room extends Model
 {
-    
+    protected $primaryKey = 'room_id';
 
     public static $rules = array(
         'room_type_id' => 'required',
@@ -21,12 +23,16 @@ class Room extends Model
 
    }
        
-    
+    protected $primaryKey = 'room_id';
 
-    public function room_type()
+    //子から親を呼びたいときはBelongsTO
+    public function room_type():BelongsTo 
     {
-        return $this->belongsTo('App\Room_type');
+        // テーブルの指定、子テーブルの外部キー、対応する親テーブルの外部キー
+        return $this->belongsTo(Room_type::class,'room_type_id','room_type_id');
     }
 
     
+
+
 }

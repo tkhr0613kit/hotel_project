@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
     <title>New Hotel Group</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -14,6 +15,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+room_types_tkhr
+    <style>
+
 
     <style>
         body {
@@ -39,6 +43,7 @@
         }
 
 
+main
         li {
             list-style: none;
         }
@@ -51,29 +56,39 @@
             justify-content: space-between;
         }
         .guest_name,.guest_tel,.guest_address {
-
             width: 45em;
+room_types_tkhr
+
+        }
 
        }
+
+main
     </style>
 </head>
 <body>
     <header>
+room_types_tkhr
         <div class="header_title">
             <h1>New Hotel Group</h1>
         </div>
         <h2>※管理者画面</h2>
+main
         <nav>
             <ul class="main_nav">
                 <li><a href="#">ホーム</a></li>
                 <li><a href="#">管理者ログイン</a></li>
                 <li><a href="guest/add">利用者管理</a></li>
-                <li><a href="#">予約管理</a></li>
-                <li><a href="#">部屋管理</a></li>
+                <li><a href="reservation">予約管理</a></li>
+                <li><a href="room">部屋管理</a></li>
             </ul>
         </nav>
     </header>
+room_types_tkhr
     <hr>
+
+
+main
     <body>
         @yield('body')
     </body>
