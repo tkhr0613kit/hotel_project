@@ -15,6 +15,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+room_types_tkhr
+    <style>
+
 
     <style>
         body {
@@ -40,6 +43,7 @@
         }
 
 
+main
         li {
             list-style: none;
         }
@@ -53,13 +57,23 @@
         }
         .guest_name,.guest_tel,.guest_address {
             width: 45em;
+room_types_tkhr
+
+        }
+
        }
 
+main
     </style>
 </head>
 <body>
     <header>
-
+room_types_tkhr
+        <div class="header_title">
+            <h1>New Hotel Group</h1>
+        </div>
+        <h2>※管理者画面</h2>
+main
         <nav>
             <ul class="main_nav">
                 <li><a href="#">ホーム</a></li>
@@ -70,7 +84,11 @@
             </ul>
         </nav>
     </header>
+room_types_tkhr
+    <hr>
 
+
+main
     <body>
         @yield('body')
     </body>

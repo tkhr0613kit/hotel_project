@@ -17,6 +17,12 @@ class RoomtypesTableSeeder extends Seeder
             'room_name' => 'シングル',
             'room_capacity' => '1'
         ];
+
+        $param = [
+            'room_name' => 'ツイン',
+            'room_capacity' => '2'
+        ];
+
         DB::table('room_types')->insert($param);
     }
 }
