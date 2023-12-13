@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Room;
+use App\Models\Reserve_list;
 
 class Reservation extends Model
 {
@@ -20,6 +21,9 @@ class Reservation extends Model
 
     public function reserve_lists(){
        return $this->belongsToMany(Room::class,'reserve_lists','room_id','reservation_id');
+    }
+    public function reserve_list(){
+        return $this->belongsTo(Reserve_list::class,'reservation_id','reservation_id');
     }
 
 }
