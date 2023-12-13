@@ -14,8 +14,8 @@ class Reserve_listsSeeder extends Seeder
     {
         $faker=\Faker\Factory::create('ja_JP');
         for($i=0; $i<10; $i++){
-            $param =['reservation_id'=>$i,
-            'room_id'=>$i,
+            $param =['reservation_id'=>$i+1,
+            'room_id'=>$i+1,
             'stay_day'=>$faker->numberBetween(1,10),
             'price'=>$faker->randomNumber()
 

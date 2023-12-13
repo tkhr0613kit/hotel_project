@@ -11,6 +11,10 @@
         <th>チェックイン日</th>
         <th>チェックアウト日</th>
         <th>部屋番号</th>
+        <th>部屋の種類</th>
+        <th>料金</th>
+        <th>宿泊日数</th>
+        
     @foreach($reservations as $reservation)
     <tr>
         <th>{{$reservation->reservation_id}}</th>
@@ -22,7 +26,10 @@
         <td>{{$reservation->check_in_date}}</td>
         <td>{{$reservation->check_out_date}}</td>
 
-        <td>{{$reservation->reserve_lists}}</td>
+        <td>{{$reservation->reserve_lists->first()->room_number}}</td>
+        <td>{{$reservation->reserve_lists->first()->room_type->room_name}}</td>
+        <td>{{$reservation->reserve_list->price}}円</td>
+        <td>{{$reservation->reserve_list->stay_day}}拍</td>
     </tr>
     @endforeach
     </table>
